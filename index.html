@@ -69,37 +69,8 @@
   }
 
   /* ---------- ハロウィン限定配色(10/31まで、自動切り替え) ---------- */
+  /* ハロウィン期間中は、昼夜(システム設定)に関わらず常に夜バージョンの配色にする */
   :root.halloween-theme{
-    --bg: #FBF0E4;
-    --surface: #FFFFFF;
-    --surface-soft: #F5E3C9;
-    --ink: #3B2A22;
-    --ink-soft: #7A5C46;
-    --ink-faint: #B79A82;
-    --accent: #E8834E;
-    --accent-strong: #C85A2E;
-    --accent-2: #6B4E9C;
-    --line: #F0DCC0;
-    --line-strong: #E0C39A;
-    --shadow: 25 55% 20%;
-  }
-  @media (prefers-color-scheme: dark){
-    :root.halloween-theme:not([data-theme="light"]){
-      --bg: #221527;
-      --surface: #3D2440;
-      --surface-soft: #4A2E4E;
-      --ink: #F5E9D9;
-      --ink-soft: #D9B98F;
-      --ink-faint: #A8886B;
-      --accent: #FF9B54;
-      --accent-strong: #FFB877;
-      --accent-2: #B48EE0;
-      --line: #52334F;
-      --line-strong: #63405F;
-      --shadow: 280 45% 4%;
-    }
-  }
-  :root.halloween-theme[data-theme="dark"]{
     --bg: #221527;
     --surface: #3D2440;
     --surface-soft: #4A2E4E;
