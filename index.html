@@ -8,7 +8,7 @@
   // ハロウィン企画:2026/10/31までは専用配色・限定プランを表示し、11/1になったら自動でいつもの配色に戻る
   (function(){
     var HALLOWEEN_END = new Date(2026, 10, 1); // 2026-11-01 00:00 (配色はここまで)
-    var ORDER_END = new Date(2026, 9, 16); // 2026-10-16 00:00 (星のハロウィン便の受付は10/15まで、発送準備のため)
+    var ORDER_END = new Date(2026, 9, 11); // 2026-10-11 00:00 (星のハロウィン便の受付は10/10まで、発送準備のため)
     var now = new Date();
     if (now < HALLOWEEN_END) {
       document.documentElement.classList.add('halloween-theme');
@@ -113,10 +113,10 @@
     --line-strong: #63405F;
     --shadow: 280 45% 4%;
   }
-  /* 星のハロウィン便の受付期間中だけ表示する要素(10/15を過ぎると自動で非表示、配色は10/31まで別途継続) */
+  /* 星のハロウィン便の受付期間中だけ表示する要素(10/10を過ぎると自動で非表示、配色は10/31まで別途継続) */
   .halloween-only{ display: none !important; }
   :root.halloween-order-open .halloween-only{ display: revert !important; }
-  /* 星のハロウィン便の受付期間中だけ隠す要素(10/15を過ぎると自動で再表示) */
+  /* 星のハロウィン便の受付期間中だけ隠す要素(10/10を過ぎると自動で再表示) */
   :root.halloween-order-open .halloween-hide{ display: none !important; }
 
   *{ box-sizing: border-box; }
@@ -745,7 +745,7 @@
             </svg>
           </span>
           <h3 style="font-size:1.05rem;margin-bottom:8px;">星のハロウィン便<span class="badge-soon">期間限定</span></h3>
-          <p>星読みレポートと一緒に、ハロウィンのお菓子(たえセレクトの市販品)をご自宅までお届けします。<br>高級品ではありませんが、どんなお菓子が届くのかワクワクお待ちください。<br>読んで、味わって、楽しいハロウィンを☆<br>(お申し込みは10/15まで)</p>
+          <p>星読みレポートと一緒に、ハロウィンのお菓子(たえセレクトの市販品)をご自宅までお届けします。<br>高級品ではありませんが、どんなお菓子が届くのかワクワクお待ちください。<br>読んで、味わって、楽しいハロウィンを☆<br>(先着3名)(お申し込みは10/10まで)</p>
           <p class="price-tag">送料込み <span class="amount">¥3,500</span></p>
           <a class="btn btn-primary" href="https://forms.gle/aagmZN1KsTzkPZtR6" target="_blank" rel="noopener" style="margin-top:16px;">申し込みフォームへ</a>
         </div>
@@ -846,7 +846,7 @@
         <dt>メールアドレス</dt>
         <dd><a class="email-auto" data-user="tae.hoshiyomi" data-domain="gmail.com" data-show="true" href="#"></a></dd>
         <dt>販売価格</dt>
-        <dd>星読みレポート ¥3,000(モニター価格)<br>今と未来の星読み ¥5,000(モニター価格、現在は対面のみ)<span class="halloween-only">・<br>星のハロウィン便 ¥3,500(期間限定、10/15受付終了)</span></dd>
+        <dd>星読みレポート ¥3,000(モニター価格)<br>今と未来の星読み ¥5,000(モニター価格、現在は対面のみ)<br>星からのお手紙 ¥1,500(送料込み)<span class="halloween-only">・<br>星のハロウィン便 ¥3,500(期間限定・先着3名、10/10受付終了)</span></dd>
         <dt>商品代金以外に必要な料金</dt>
         <dd>お振込み手数料はお客様のご負担となります。</dd>
         <dt>お支払い方法</dt>
